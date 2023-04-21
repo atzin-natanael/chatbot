@@ -98,7 +98,6 @@ def check_all_messages(message):
 
     best_match = max(highest_prob, key = highest_prob.get)
     print(highest_prob)
-
     return unknow() if highest_prob[best_match]< 1 else best_match
 def unknow():
     response = ['Puedes decirlo de nuevo?', 'No estoy seguro de lo que quieres', 'Buscalo en google, a ver que tal'][random.randrange(3)]
